@@ -8,4 +8,5 @@ class Task:
 		self.isDone = True
 
 	def __str__(self):
-		return f"{self.subject}"
+		createdSince = datetime.now() - self.dateCreation
+		return f"{createdSince} {self.subject}"
